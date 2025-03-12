@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+
+.caixa{
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    margin: auto;
+    background-color: gray;
+    padding: 30px;
+    border-radius: 20px;
+    gap: 10px;
+}
+
+h1{
+    text-align: center;
+    font-size: 20px;
+}
+
+.caixa label{
+    color: white;
+}
+
+#btnEnviar{
+    background-color: aqua;
+    cursor: pointer;
+    transition: 0.5s;
+    border: 2px solid black;
+}
+
+#btnEnviar:hover{
+    background-color: rgb(0, 184, 184);
+}
+
+.resultado{
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding-left: 30px;
+    padding: 20px;
+}
