@@ -1,0 +1,15 @@
+.aprovado{
+    background-color: aqua;
+}
+
+.recuperacao{
+    background-color: yellow;
+}
+
+.reprovado{
+    background-color: red;
+}
+
+.aviso{
+    background-color: green;
+}

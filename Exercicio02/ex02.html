@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 02</title>
+    <link rel="stylesheet" href="ex02.css">
+</head>
+
+<body>
+    
+    <section>
+
+        <h1>Calcular Média</h1>
+
+    <form>
+
+        <label for="num1">Nota 1</label>
+        <input type="number" name="num1" id="cxNum1" min="0.0" max="10.0" step="0.1" onblur="validarNumero(this)">
+
+        <label for="num2">Nota 2</label>
+        <input type="number" name="num2" id="cxNum2" min="0.0" max="10.0" step="0.1" onblur="validarNumero(this)">
+
+        <input type="button" value="Calcular" id="btnCalcular">
+        <input type="button" value="Limpar" id="btnLimpar">
+
+        <input type="text" name="aler" id="alerta" readonly placeholder="Sua situação">
+
+        <input type="text" name="res" id="resultado" readonly placeholder="Sua nota final">
+
+        <p id="aviso"></p>
+
+    </form>
+
+        <script src="ex02.js"></script>
+
+    </section>
+
+</body>
+
+</html>
