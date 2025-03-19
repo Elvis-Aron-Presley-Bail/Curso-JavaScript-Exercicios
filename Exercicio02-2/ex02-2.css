@@ -1,0 +1,16 @@
+.aprovado{
+    background-color: greenyellow;
+}
+
+.reprovado{
+    background-color: red;
+}
+
+.recuperacao{
+    background-color: yellow;
+}
+
+.alerta{
+    background-color: orange;
+    border: 3px solid red;
+}

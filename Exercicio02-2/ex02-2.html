@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ex02-2.css">
+</head>
+
+<body>
+
+    <section>
+        <h1>Calcular média</h1>
+
+        <form>
+            <label for="nota1">Nota 1: </label>
+            <input type="number" name="nota1" id="nota1" min="0" max="10" step="0.1" onBlur='validarNumero(this)'>
+            <label for="nota2">Nota 2: </label>
+            <input type="number" name="nota2" id="nota2" min="0" max="10" step="0.1" onBlur='validarNumero(this)'>
+        </form>
+
+        <div class="botao">
+            <input type="button" value="Calcular" id="btnCalcular">
+            <input type="button" value="Limpar" id="btnLimpar">
+        </div>
+
+        <form>
+            <label for="media">Média: </label>
+            <input type="number" name="media" id="mediaFinal" disabled>
+        </form>
+
+        <div class="situacao">
+            <p id="situacao">?</p>
+        </div>
+
+    </section>
+
+    <script src="ex02-2.js"></script>
+    
+</body>
+
+</html>
