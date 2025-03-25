@@ -1,0 +1,12 @@
+.acertou{
+    background-color: greenyellow;
+}
+
+.errou{
+    background-color: red;
+}
+
+.alerta{
+    background-color: yellow;
+    border: 2px solid orangered;
+}

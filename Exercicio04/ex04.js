@@ -1,38 +1,61 @@
 let cxNumero = document.querySelector('#num')
 
-let numeroMisterioso = 0
-
 let btnChutar = document.querySelector('#btnChutar')
 let btnMusica = document.querySelector('#btnMusica')
+
+let numeroSecreto = 0
+
+let situacao = ''
+
+let min = 0
+let max = 10
 
 let mensagem = document.querySelector('#mensagem')
 
 let musica = document.querySelector('#musica')
 
-btnChutar.addEventListener('click', function(e) {
+function gerar(){
 
-    let num = cxNumero.value
+    numeroSecreto = Math.floor(Math.random() * (max - min + 1)) + min
 
-    if(num == gerar()){
-        mensagem.textContent = 'acertou'
+    console.log(numeroSecreto)
+
+}
+
+btnChutar.addEventListener('click' , function(){
+
+    let numeroChute = cxNumero.value
+
+    if(numeroChute == numeroSecreto ) {
+        mensagem.classList.add('acertou')
+        mensagem.textContent = 'Acertou'
+        btnChutar.setAttribute('disabled', 'disabled')
+        gerar()
+        console.log('Voce acertou')
+    } else if(numeroChute < 0 || numeroChute > 10){
+        btnChutar.setAttribute('disabled', 'disabled')
+        mensagem.classList.add('alerta')
+        mensagem.textContent = 'Digite um numero entre 0 e 10'
+    } else if(numeroChute != numeroSecreto){
+        btnChutar.setAttribute('disabled', 'disabled')
+        mensagem.classList.add('errou')
+        mensagem.textContent = 'Errou'
+        console.log('tente denovo')
     } else {
-        mensagem.textContent = 'tente novamente'
+        console.log('erro')
     }
 
-    e.preventDefault()
+    setTimeout(() => {
+        btnChutar.removeAttribute('disabled')
+        mensagem.textContent = ''
+        mensagem.classList.remove('errou')
+        mensagem.classList.remove('acertou')
+        mensagem.classList.remove('alerta')
+        cxNumero.value = ''
+    }, 3000);
+
 })
 
-function gerar(){
-    let numMisterio = gerarNumero(1,10)
-
-    let numeroMisterioso = numMisterio
-
-    console.log(numeroMisterioso)
-    return numeroMisterioso
-}
-
-function gerarNumero(min, max){
-    min = Math.ceil(min)  // arredonda para cima  ceil  = teto
-    max = Math.floor(max) // arredonda para baixo floor = piso
-    return Math.floor(Math.random() * (max - min + 1)) + min
-}
+btnMusica.addEventListener('click' , function(){
+    musica.play()
+})
