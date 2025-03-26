@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <section>
+
+        <label for="numero">Coloque o valor em real</label>
+        <input type="number" name="numero" id="numero" onclick="liberarBotao()" onchange="liberarBotao()">
+
+        <input type="button" value="Converter" id="btnConverter" onclick="liberarBotao() ; bloquearBotao()" disabled>
+        <input type="button" value="Limpar" id="btnLimpar"">
+
+        <input type="radio" name="selecionar">
+        <input type="radio" name="selecionar">
+        <input type="radio" name="selecionar">
+
+        <p id="alerta">Valor convertido</p>
+
+    </section>
+
+    <script src="./ex05.js"></script>
+
+</body>
+</html>
