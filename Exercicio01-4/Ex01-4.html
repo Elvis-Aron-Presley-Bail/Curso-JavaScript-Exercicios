@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Ex01-4.css">
+</head>
+
+<body>
+    
+    <section>
+
+        <h1>Calcular IMC</h1>
+
+    <form autocomplete="on">
+        <label for="nome">Nome: </label>
+        <input type="text" name="nome" id="cxnome">
+
+        <label for="idade">Idade: </label>
+        <input type="number" name="idade" id="cxidade" min="0" max="150" step="1.0">
+
+        <label for="altura">Altura: </label>
+        <input type="number" name="altura" id="cxaltura" min="0.1" max="2.50" step="0.1">
+
+        <label for="peso">Peso: </label>
+        <input type="number" name="peso" id="cxpeso" min="0.1" max="500" step="0.1">
+
+        <input type="button" onclick="enviar()" value="Enviar">
+        <input type="button" onclick="limpar()" value="Limpar">
+
+        <label for="caixa">Imc: </label>
+        <input type="number" disabled name="caixa" id="imccaixa">
+    </form>
+
+
+        <div id="caixonaRes">
+            <h1>Resultado</h1>
+
+            <p class="resultado">x</p>
+            <p class="resultado">x</p>
+            <p class="resultado">x</p>
+            <p class="resultado">x</p>
+            <p class="resultado">x</p>
+        </div>
+    </section>
+
+    <script src="./Ex01-4.js"></script>
+
+</body>
+
+</html>
