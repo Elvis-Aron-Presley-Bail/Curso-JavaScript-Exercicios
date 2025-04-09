@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./ex06-2.css">
+</head>
+
+<body>
+    
+    <main>
+
+        <section>
+
+            <header>
+                <h1>Súper Quiz</h1>
+            </header>
+
+            <div class="pergunta">
+                <span id="numQuestao"></span>
+                <span id="pergunta">pergunta</span>
+            </div>
+
+            <div class="opcoes" id="alternativas">
+                <ol type="A">
+                    <li id="a" value="1A" class="respostas" onclick="verificarSeAcertou(this, this)"></li>
+                    <li id="b" value="1B" class="respostas" onclick="verificarSeAcertou(this, this)"></li>
+                    <li id="c" value="1C" class="respostas" onclick="verificarSeAcertou(this, this)"></li>
+                </ol>
+            </div>
+
+            <div class="progresso">
+                <span id="progresso">Questao tal</span>
+            </div>
+
+            <footer>Desenvolvido por Elvis Bail</footer>
+
+        </section>
+
+    </main>
+
+    <script src="./ex06-2.js"></script>
+
+</body>
+
+</html>
