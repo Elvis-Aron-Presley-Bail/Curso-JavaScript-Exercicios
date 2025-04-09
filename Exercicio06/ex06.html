@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="icon" href="images/favicon.png" />
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ex06</title>
-    <link rel="stylesheet" href="./ex06.css">
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="./ex06.css" />
 </head>
-
 <body>
-    
+
     <main class="tela-principal">
 
         <section class='conteudos'>
 
             <h1>Quiz</h1>
+
+            <article class='centro' id='instrucoes'>
+                Leia a questão e clique na resposta correta
+            </article>
 
             <article class='questoes'>
                 
@@ -26,6 +32,7 @@
                     <ol type='A' id='alternativas'>
                         <li id='a' value='1A' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
                         <li id='b' value='1B' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
+                        <li id='c' value='1C' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
                     </ol>
                 </div>
             </article>
@@ -34,11 +41,11 @@
             
         </section>
 
-        <footer class='centro'>Desenvolvido por Edson Maia &copy; 2021</footer>
+        <footer class='centro'>Desenvolvido por Elvis Bail &copy; 2025</footer>
     </main>
 
-    <script src="./ex06.js"></script>
+<!-- JS externo -->
+<script src="./ex06.js"></script>
 
 </body>
-
 </html>
