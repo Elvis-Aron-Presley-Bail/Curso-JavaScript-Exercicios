@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+
+<body>
+
+    <article id="tudo">
+
+        <h1>Mega Quiz</h1>
+
+        <div id="perENum">
+            <span id="numPerg">1</span>
+            <span id="pergunta">pergunta</span>
+        </div>
+
+        <div id="alternativas">
+            <ul>
+                <li id="a" value="1A" class="resposta" onclick="verificarSeAcertou(this, this)"></li>
+                <li id="b" value="1B" class="resposta" onclick="verificarSeAcertou(this, this)"></li>
+                <li id="c" value="1C" class="resposta" onclick="verificarSeAcertou(this, this)"></li>
+            </ul>
+        </div>
+
+        <div id="pontuacao">
+            Pontos: <span id="pontosAtual">0</span>
+        </div>
+
+        <div id="progresso">
+            Questão <span id="numQuestao">1</span> de <span id="totalDeQuestoes">5</span>
+        </div>
+
+    </article>
+    
+    <script src="quiz.js"></script>
+
+</body>
+
+</html>
