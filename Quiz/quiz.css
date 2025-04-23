@@ -1,12 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --cursor: url(./cursor.svg), auto;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-size: 20px;
+    font-family: "Winky Rough", sans-serif;
+}
+
+html {
+    cursor: var(--cursor);
 }
 
 body {
-    background: rgb(99, 99, 99);
+    background: #FFFFFF;
     color: white;
     display: flex;
     height: 100vh;
@@ -16,7 +27,9 @@ body {
 }
 
 #tudo {
-    border: 2px solid white;
+    background-color: #67568c;
+    border: 2px solid #1f1235;
+    border-radius: 5px;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -27,27 +40,37 @@ body {
 
 h1 {
     text-align: center;
+    background-color: #ff6e6c;
+    border: 2px solid #1f1235;
 }
 
 #perENum {
     border: 2px solid white;
+    background-color: #1f1235;
+    padding-left: 20px;
 }
 
-#alternativas {
-    border: 2px solid white;
+#numPerg {
+    border: 1px solid #1b1425;
+    background-color: #ff6e6c;
+    padding: 1px 9px;
+    border-radius: 50%;
 }
 
 #alternativas li {
-    border: 2px solid white;
+    background-color: #fbdd74;
+    border: 2px solid #1f1235;
+    color: #1f1235;
     list-style: none;
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 10px;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 #alternativas li:hover {
-    background-color: aqua;
+    background-color: #ff6e6c;
 }
 
 #progresso {

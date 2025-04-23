@@ -67,6 +67,7 @@ b.setAttribute('value', '1B')
 c.setAttribute('value', '1C')
 
 function proximaQuestao(nQuestao) {
+    numQuestao.textContent = nQuestao
     numPerg.textContent = todasQuestoes[nQuestao].numeroQuestao
     textoPergunta.textContent = todasQuestoes[nQuestao].pergunta
     a.textContent =todasQuestoes[nQuestao].alternativaA
