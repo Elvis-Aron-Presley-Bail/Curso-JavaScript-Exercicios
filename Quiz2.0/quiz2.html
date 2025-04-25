@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="quiz2.css">
+</head>
+
+<body>
+
+    <article id="tudo">
+
+        <h1>QUIZ 2.0</h1>
+
+        <div id="perENum">
+            <span id="numPergTxt">1 </span>) <span id="pergTxt">pergunta</span>
+        </div>
+
+        <ul>
+            <li id="a" class="alternativa" onclick="verificarSeAcertou(this, this)">A</li>
+            <li id="b" class="alternativa" onclick="verificarSeAcertou(this, this)">B</li>
+            <li id="c" class="alternativa" onclick="verificarSeAcertou(this, this)">C</li>
+        </ul>
+
+        <div id="pontosTxt">
+            Pontos: <span id="placar">0</span>
+        </div>
+
+        <div id="progresso">
+            Questão <span id="questaoAtual">1</span> de <span id="totalQuestoes">5</span>
+        </div>
+
+    </article>
+    
+    <script src="quiz2.js"></script>
+
+</body>
+
+</html>
