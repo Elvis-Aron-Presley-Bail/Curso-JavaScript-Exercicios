@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 3</title>
+    <link rel="stylesheet" href="quiz3.css">
+</head>
+
+<body>
+    
+    <div class="todo">
+
+        <h1>Quiz 3.0</h1>
+
+        <div id="numEPerg">
+            <span id="numPerg">1</span>) 
+            <span id="perguntaTxt">Pergunta</span>
+        </div>
+
+        <div id="alternativas">
+            <ul>
+                <p class="alternativa" id="a" onclick="verificarSeAcertou(this, this)">a</p>
+                <p class="alternativa" id="b" onclick="verificarSeAcertou(this, this)">b</p>
+                <p class="alternativa" id="c" onclick="verificarSeAcertou(this, this)">c</p>
+            </ul>
+        </div>
+
+        <div class="progresso">
+            Questão <span id="questaoAtual">1</span> de <span id="totalDeQuestoes">5</span>
+        </div>
+
+        <div class="pontos">
+            Pontos: <span id="pontos">1</span>
+        </div>
+
+    </div>
+
+    <script src="quiz3.js"></script>
+
+</body>
+
+</html>
