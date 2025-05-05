@@ -1,0 +1,16 @@
+{
+    "jogadores": [
+        {
+            "jogador": 0,
+            "nome": "joão"
+        },
+        {
+            "jogador": 1,
+            "nome": "josé"
+        },
+        {
+            "jogador": 2,
+            "nome": "pedro"
+        }
+    ]
+}
