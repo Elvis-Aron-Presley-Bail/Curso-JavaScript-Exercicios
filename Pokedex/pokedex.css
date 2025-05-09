@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+main {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: red;
+}
+
+.caixaImg {
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./3551101.webp);
+    background-size: cover;
+    height: 200px;
+    width: 300px;
+}
+
+.caixaImg img {
+    width: 100px;
+}
+
+h1 {
+    background-color: white;
+    margin-top: 20px;
+    border: 2px solid black;
+}
