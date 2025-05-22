@@ -1,0 +1,40 @@
+{
+    "perguntas" : [
+        {
+            "numeroQuestao" : 0,
+            "pergunta" : "pergunta",
+            "alternativaA" : "alternativaA",
+            "alternativaB" : "alternativaB",
+            "alternativaC" : "alternativaC",
+            "resposta" : "resposta"
+        },
+        
+        {
+            "numeroQuestao" : 1,
+            "pergunta" : "Quanto é 1 + 1?",
+            "alternativaA" : "1",
+            "alternativaB" : "2",
+            "alternativaC" : "45290",
+            "resposta" : "2"
+        },
+        
+        {
+            "numeroQuestao" : 2,
+            "pergunta" : "Qual é a capital do Brasil?",
+            "alternativaA" : "Marte",
+            "alternativaB" : "Lua",
+            "alternativaC" : "Brasília",
+            "resposta" : "Brasília"
+        },
+        
+        {
+            "numeroQuestao" : 3,
+            "pergunta" : "Qual número é maior?",
+            "alternativaA" : "4",
+            "alternativaB" : "7",
+            "alternativaC" : "9 trilhões",
+            "resposta" : "9 trilhões"
+        }
+        
+    ]
+}
